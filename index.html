@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГАУЗ Кайбицкая ЦРБ</title>
+    <link rel="icon" type="image/png" href="data/logo_nobg.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=03603db9-a7ee-4acd-8366-1d5eba2b6eda&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="data/logo_nobg.png" alt="Логотип ГАУЗ Кайбицкая ЦРБ">
+                    <h1>ГАУЗ Кайбицкая ЦРБ</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a href="#about">О больнице</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#about">О больнице</a></li>
+                                <li><a href="employees.html">Сотрудники</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="documents.html">Документы</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#services">Специалистам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="vacancies.html">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#services">Пациентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="paid-services.html">Платные услуги</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-phone">
+                    <a href="tel:+78437021331">+7 (843) 702-13-31</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Кайбицкая центральная районная больница</h2>
+                <p class="hero-description">
+                    Государственное автономное учреждение здравоохранения
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с адресом и временем работы -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>Адрес больницы</h3>
+                    <p>Республика Татарстан, с. Большие Кайбицы, ул. Гисматуллина, д. 1</p>
+                </div>
+                <div class="info-card">
+                    <h3>Время работы</h3>
+                    <p>Пн-Пт — 08:00-16:15</p>
+                </div>
+                <div class="info-card disabled">
+                    <h3>Карта ЦРБ</h3>
+                    <p>В разработке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Последние новости -->
+    <section id="news" class="services">
+        <div class="container">
+            <h2 class="section-title">Последние новости</h2>
+            <div class="news-card large">
+                <div class="news-image">
+                    <img src="data/preview_bg.png" alt="Последние новости">
+                </div>
+                <div class="news-content">
+                    <h3>Последние новости Кайбицкой ЦРБ</h3>
+                    <p>Читайте свежие новости, объявления и обновления о работе отделений, расписании приёма и новых услугах.</p>
+                    <div class="news-actions inside">
+                        <a class="btn btn-primary" href="news.html">Все новости</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О клинике -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О больнице</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        В центральной районной больнице функционирует стационар на 102 койки, из них 51 — койки круглосуточного пребывания.
+                        В состав учреждения также входят поликлиника, Большеподберезинская врачебная амбулатория на 9 коек и 30 фельдшерско-акушерских пунктов.
+                    </p>
+                    <p>
+                        Жителям района оказывается стационарная помощь в следующих отделениях:
+                         хирургическом,
+                         терапевтическом,
+                         гинекологическом,
+                         педиатрическом,
+                         инфекционном.
+                    </p>
+                    <p>
+                        Также предусмотрена одна реанимационная койка.
+                    </p>
+                    <p>
+                        В поликлинике ЦРБ ведут прием специалисты: терапевт, хирург, акушер-гинеколог, офтальмолог, отоларинголог,
+                        невролог, психиатр-нарколог, педиатр, стоматолог, фтизиатр, дерматовенеролог и онколог.
+                    </p>
+                </div>
+                <div class="advantages">
+                    <div class="advantage-item">
+                        <h4>Количество коек</h4>
+                        <p class="advantage-number">102</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>Число корпусов</h4>
+                        <p class="advantage-number">3</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>Число клинических отделений</h4>
+                        <p class="advantage-number">6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map-section">
+        <div class="map-overlay">
+            <h4>Контакты</h4>
+            <p>Республика Татарстан, с. Большие Кайбицы, ул. Гисматуллина, д. 1</p>
+            <p><a href="tel:+78437021331">+7 (843) 702-13-31</a></p>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <!-- Контакты -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><a href="tel:+78437021331">+7 (843) 702-13-31</a></p>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                    <p>Адрес уточняется</p>
+                    <p>Пн-Пт — 8:00-19:00</p>
+                    <p>Сб-Вс — 8:00-19:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#services">Акушерство и гинекология</a></li>
+                        <li><a href="#services">Оториноларингология</a></li>
+                        <li><a href="#services">Ортопедия и травматология</a></li>
+                        <li><a href="#services">Неврология</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Клиника</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Документы</h3>
+                    <ul>
+                        <li><a href="#">Лицензия</a></li>
+                        <li><a href="#">Оферта</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Согласие на обработку данных</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ГАУЗ Кайбицкая ЦРБ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    // Dropdown: open on click (no anchor jump) and close when clicking outside
+    document.addEventListener('DOMContentLoaded', () => {
+        const dropdowns = Array.from(document.querySelectorAll('.nav .dropdown'));
+        dropdowns.forEach(drop => {
+            const link = drop.querySelector('a');
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isOpen = drop.classList.contains('open');
+                dropdowns.forEach(d => d.classList.remove('open'));
+                if (!isOpen) drop.classList.add('open');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.dropdown')) {
+                dropdowns.forEach(d => d.classList.remove('open'));
+            }
+        });
+    });
+</script>
+<script>
+    function initMapV2() {
+        try {
+            const center = [55.408693, 48.183122];
+            const map = new ymaps.Map('map', {
+                center,
+                zoom: 15,
+                controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
+            });
+
+            map.behaviors.enable('scrollZoom');
+
+            const placemark = new ymaps.Placemark(center, {
+                balloonContent: 'ГАУЗ Кайбицкая ЦРБ'
+            }, {
+                preset: 'islands#redMedicalIcon',
+                draggable: false
+            });
+
+            map.geoObjects.add(placemark);
+        } catch (e) {
+            console.error('Ошибка инициализации карты', e);
+            renderStaticFallback();
+        }
+    }
+
+    function renderStaticFallback() {
+        const fallback = document.getElementById('map');
+        if (!fallback) return;
+        fallback.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = 'https://static-maps.yandex.ru/v1?ll=48.183122,55.408693&lang=ru_RU&z=15&size=650,450&scale=2&pt=48.183122,55.408693,pm2rdm&apikey=4a009991-4f15-44af-a4e0-8fb555d24827';
+        img.alt = 'Карта (статическое изображение)';
+        img.style.width = '100%';
+        img.style.height = 'auto';
+        fallback.appendChild(img);
+    }
+
+    if (window.ymaps) {
+        ymaps.ready(initMapV2);
+    } else {
+        renderStaticFallback();
+    }
+</script>
+</body>
+</html>
+
