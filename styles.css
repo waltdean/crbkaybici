@@ -170,7 +170,7 @@ body {
 .hero {
     position: relative;
     color: var(--white);
-    padding: 130px 50px;
+    padding: 220px 50px;
     text-align: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('data/preview_bg.png') center/cover no-repeat;
     width: 100%;
@@ -237,6 +237,17 @@ body {
     gap: 30px;
 }
 
+.news-grid-centered {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.news-grid-centered .news-card {
+    max-width: 500px;
+    width: 100%;
+}
+
 .news-card {
     background: var(--white);
     border-radius: 16px;
@@ -271,11 +282,25 @@ body {
     display: block;
 }
 
+.news-image-white-bg {
+    background-color: var(--white);
+}
+
+.news-image-white-bg img {
+    object-fit: contain;
+    padding: 10px;
+}
+
 .news-content {
     padding: 18px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex: 1;
+}
+
+.news-content p {
+    flex: 1;
 }
 
 .news-card h3 {
@@ -289,9 +314,20 @@ body {
     line-height: 1.6;
 }
 
+.news-card p a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.news-card p a:hover {
+    text-decoration: underline;
+}
+
 .news-date {
     color: var(--text-light);
     font-size: 0.9rem;
+    margin-top: auto;
+    padding-top: 10px;
 }
 
 .simple-page {
