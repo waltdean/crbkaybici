@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
+    padding-top: 72px; /* Отступ для фиксированного хэдера */
 }
 
 .container {
@@ -37,8 +38,11 @@ body {
 .header {
     background-color: var(--white);
     box-shadow: var(--shadow);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     z-index: 1000;
     padding: 15px 0;
 }
@@ -55,6 +59,13 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo img {
@@ -67,6 +78,7 @@ body {
     font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 600;
+    margin: 0;
 }
 
 .nav-list {
@@ -84,11 +96,6 @@ body {
     display: inline-block;
     padding: 8px 10px;
     border-radius: 8px;
-}
-
-.nav-list > li > a:hover {
-    color: var(--primary-color);
-    background: var(--bg-light);
 }
 
 .nav-list li {
@@ -126,9 +133,20 @@ body {
     color: var(--primary-color);
 }
 
-.dropdown:hover .dropdown-menu,
 .dropdown.open .dropdown-menu {
     display: block;
+}
+
+/* Hover эффекты только для десктопа */
+@media (min-width: 992px) {
+    .nav-list > li > a:hover {
+        color: var(--primary-color);
+        background: var(--bg-light);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 .dropdown.open > a {
@@ -155,9 +173,7 @@ body {
     padding: 130px 50px;
     text-align: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('data/preview_bg.png') center/cover no-repeat;
-    max-width: 1100px;
-    margin: 60px auto;
-    border-radius: 20px;
+    width: 100%;
     overflow: hidden;
     box-shadow: var(--shadow-hover);
 }
@@ -232,13 +248,20 @@ body {
 
 .news-card.large {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: stretch;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+}
+
+.news-card.large .news-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .news-card.large .news-image img {
-    height: 220px;
-    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .news-image img {
@@ -285,6 +308,165 @@ body {
     color: var(--text-light);
 }
 
+/* Страница документов */
+.documents-page {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.documents-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.documents-nav {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.doc-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.doc-nav-list li {
+    margin-bottom: 8px;
+}
+
+.doc-nav-list a {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.doc-nav-list a:hover,
+.doc-nav-list a.active {
+    background: var(--bg-light);
+    color: var(--primary-color);
+}
+
+.documents-content {
+    min-height: 400px;
+}
+
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+}
+
+.document-item:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.document-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background: var(--bg-light);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.document-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.document-info {
+    flex: 1;
+}
+
+.document-name {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+.document-type {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.document-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--accent-color);
+    background: var(--bg-light);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.document-download:hover {
+    background: var(--accent-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.document-download svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .documents-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .documents-nav {
+        position: static;
+    }
+
+    .doc-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .doc-nav-list li {
+        margin-bottom: 0;
+    }
+
+    .doc-nav-list a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 992px) {
     .news-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -295,8 +477,8 @@ body {
     }
 
     .news-card.large .news-image img {
-        height: 200px;
-        min-height: 180px;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
     }
 }
 
@@ -332,7 +514,7 @@ body {
 }
 
 .info-card p {
-    color: var(--text-light);
+    color: var(--text-color);
     margin: 5px 0;
 }
 
@@ -392,6 +574,11 @@ section {
 
 @media (max-width: 992px) {
     .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .employees-grid,
+    .vacancies-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -515,6 +702,124 @@ section {
     transition: all 0.3s;
 }
 
+/* Сетка сотрудников */
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.employee-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.employee-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.employee-photo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.employee-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.employee-position {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Сетка вакансий */
+.vacancies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.vacancy-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.vacancy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.vacancy-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vacancy-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vacancy-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.vacancy-position {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.vacancy-qualification {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
 .doctor-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
@@ -595,6 +900,34 @@ section {
     margin-bottom: 10px;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
@@ -604,7 +937,7 @@ section {
 
 .map-section {
     width: 100%;
-    background: #f2f4f7;
+    background: var(--white);
     position: relative;
     overflow: hidden;
 }
@@ -661,6 +994,10 @@ section {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Больший отступ для мобильных, где хэдер выше */
+    }
+
     .header-content {
         flex-direction: column;
         text-align: center;
@@ -688,12 +1025,23 @@ section {
     }
 
     .services-grid,
-    .doctors-grid {
+    .doctors-grid,
+    .employees-grid,
+    .vacancies-grid {
         grid-template-columns: 1fr;
     }
 
     .info-cards {
         grid-template-columns: 1fr;
+    }
+
+    .map-overlay {
+        top: auto;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        transform: none;
+        max-width: none;
     }
 }
 

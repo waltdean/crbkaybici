@@ -7,49 +7,11 @@
     <link rel="icon" type="image/png" href="data/logo_nobg.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=03603db9-a7ee-4acd-8366-1d5eba2b6eda&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/load-components.js" defer></script>
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="data/logo_nobg.png" alt="Логотип ГАУЗ Кайбицкая ЦРБ">
-                    <h1>ГАУЗ Кайбицкая ЦРБ</h1>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="dropdown">
-                            <a href="#about">О больнице</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#about">О больнице</a></li>
-                                <li><a href="employees.html">Сотрудники</a></li>
-                                <li><a href="news.html">Новости</a></li>
-                                <li><a href="documents.html">Документы</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#services">Специалистам</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="vacancies.html">Вакансии</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#services">Пациентам</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html">Услуги</a></li>
-                                <li><a href="paid-services.html">Платные услуги</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header-phone">
-                    <a href="tel:+78437021331">+7 (843) 702-13-31</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Главный баннер -->
     <section class="hero">
@@ -75,10 +37,6 @@
                     <h3>Время работы</h3>
                     <p>Пн-Пт — 08:00-16:15</p>
                 </div>
-                <div class="info-card disabled">
-                    <h3>Карта ЦРБ</h3>
-                    <p>В разработке</p>
-                </div>
             </div>
         </div>
     </section>
@@ -89,13 +47,13 @@
             <h2 class="section-title">Последние новости</h2>
             <div class="news-card large">
                 <div class="news-image">
-                    <img src="data/preview_bg.png" alt="Последние новости">
+                    <img src="data/logo_filled.png" alt="Последние новости">
                 </div>
                 <div class="news-content">
                     <h3>Последние новости Кайбицкой ЦРБ</h3>
                     <p>Читайте свежие новости, объявления и обновления о работе отделений, расписании приёма и новых услугах.</p>
                     <div class="news-actions inside">
-                        <a class="btn btn-primary" href="news.html">Все новости</a>
+                        <a class="btn btn-primary" href="news/news.html">Все новости</a>
                     </div>
                 </div>
             </div>
@@ -151,75 +109,13 @@
         <div class="map-overlay">
             <h4>Контакты</h4>
             <p>Республика Татарстан, с. Большие Кайбицы, ул. Гисматуллина, д. 1</p>
-            <p><a href="tel:+78437021331">+7 (843) 702-13-31</a></p>
+            <p><a href="tel:+78437021332">+7 (843) 702-13-32</a></p>
         </div>
         <div id="map"></div>
     </section>
 
     <!-- Контакты -->
-    <footer id="contacts" class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Контакты</h3>
-                    <p><a href="tel:+78437021331">+7 (843) 702-13-31</a></p>
-                    <p><a href="mailto:info@example.com">info@example.com</a></p>
-                    <p>Адрес уточняется</p>
-                    <p>Пн-Пт — 8:00-19:00</p>
-                    <p>Сб-Вс — 8:00-19:00</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Услуги</h3>
-                    <ul>
-                        <li><a href="#services">Акушерство и гинекология</a></li>
-                        <li><a href="#services">Оториноларингология</a></li>
-                        <li><a href="#services">Ортопедия и травматология</a></li>
-                        <li><a href="#services">Неврология</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Клиника</h3>
-                    <ul>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Документы</h3>
-                    <ul>
-                        <li><a href="#">Лицензия</a></li>
-                        <li><a href="#">Оферта</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Согласие на обработку данных</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ГАУЗ Кайбицкая ЦРБ. Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-<script>
-    // Dropdown: open on click (no anchor jump) and close when clicking outside
-    document.addEventListener('DOMContentLoaded', () => {
-        const dropdowns = Array.from(document.querySelectorAll('.nav .dropdown'));
-        dropdowns.forEach(drop => {
-            const link = drop.querySelector('a');
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const isOpen = drop.classList.contains('open');
-                dropdowns.forEach(d => d.classList.remove('open'));
-                if (!isOpen) drop.classList.add('open');
-            });
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.dropdown')) {
-                dropdowns.forEach(d => d.classList.remove('open'));
-            }
-        });
-    });
-</script>
+    <div id="footer-placeholder"></div>
 <script>
     function initMapV2() {
         try {
