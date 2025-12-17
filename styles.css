@@ -181,6 +181,48 @@ body {
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.hero-meta {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+}
+
+.hero-meta-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-meta-link:hover {
+    background: rgba(0, 0, 0, 0.35);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.hero-meta-time {
+    margin-left: auto;
+    font-weight: 500;
+    opacity: 0.95;
 }
 
 .hero-title {
@@ -397,10 +439,26 @@ body {
     min-height: 400px;
 }
 
+.documents-section + .documents-section {
+    margin-top: 40px;
+}
+
+.documents-section-title {
+    margin: 0 0 16px 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
 .documents-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+/* Убираем общий padding у внутренних секций на странице документов */
+.documents-page .documents-section {
+    padding: 0;
 }
 
 .document-item {
@@ -476,6 +534,17 @@ body {
 .document-download svg {
     width: 20px;
     height: 20px;
+}
+
+/* Цвета иконок типов документов (слева от названия) */
+.document-icon--pdf {
+    background: rgba(249, 115, 22, 0.12);
+    color: #f97316;
+}
+
+.document-icon--word {
+    background: rgba(37, 99, 235, 0.12);
+    color: #2563eb;
 }
 
 @media (max-width: 768px) {
