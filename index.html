@@ -15,6 +15,20 @@
 
     <!-- Главный баннер -->
     <section class="hero">
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h2 class="hero-title">Кайбицкая центральная районная больница</h2>
@@ -31,7 +45,7 @@
     <!-- Последние новости -->
     <section id="news" class="services">
         <div class="container">
-            <h2 class="section-title">Последние новости</h2>
+            <h2 class="section-title">Новости</h2>
             <div class="news-grid news-grid-centered">
                 <article class="news-card">
                     <div class="news-image">
@@ -117,6 +131,57 @@
 
     <!-- Контакты -->
     <div id="footer-placeholder"></div>
+
+<script>
+    // Анимация счётчиков с числами преимуществ
+    document.addEventListener('DOMContentLoaded', function () {
+        const counters = document.querySelectorAll('.advantage-number');
+        if (!('IntersectionObserver' in window) || !counters.length) return;
+
+        counters.forEach(counter => {
+            const initial = parseInt(counter.textContent.replace(/\D/g, ''), 10);
+            if (!isNaN(initial)) {
+                counter.dataset.target = String(initial);
+                counter.textContent = '0';
+            }
+        });
+
+        function animateCounter(el) {
+            if (el.dataset.animated === 'true') return;
+            const target = parseInt(el.dataset.target || '0', 10);
+            if (!target) return;
+
+            el.dataset.animated = 'true';
+            const duration = 900;
+            const startTime = performance.now();
+
+            function tick(now) {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const value = Math.floor(progress * target);
+                el.textContent = String(value);
+                if (progress < 1) {
+                    requestAnimationFrame(tick);
+                } else {
+                    el.textContent = String(target);
+                }
+            }
+
+            requestAnimationFrame(tick);
+        }
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        counters.forEach(counter => observer.observe(counter));
+    });
+</script>
+
 <script>
     function initMapV2() {
         try {
