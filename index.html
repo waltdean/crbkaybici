@@ -119,6 +119,22 @@
         </div>
     </section>
 
+    <!-- Схема больницы -->
+    <section id="scheme" class="scheme-section">
+        <div class="container">
+            <h2 class="section-title">Схема больницы</h2>
+            <div class="scheme-container">
+                <img src="data/Scheme.png" alt="Схема больницы" class="scheme-image" id="scheme-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для схемы -->
+    <div id="scheme-modal" class="scheme-modal">
+        <span class="scheme-modal-close">&times;</span>
+        <img class="scheme-modal-content" id="scheme-modal-img" src="" alt="Схема больницы">
+    </div>
+
     <!-- Карта -->
     <section id="contacts" class="map-section">
         <div class="map-overlay">
@@ -225,6 +241,49 @@
     } else {
         renderStaticFallback();
     }
+</script>
+
+<script>
+    // Модальное окно для схемы больницы
+    document.addEventListener('DOMContentLoaded', function() {
+        const schemeImage = document.getElementById('scheme-image');
+        const modal = document.getElementById('scheme-modal');
+        const modalImg = document.getElementById('scheme-modal-img');
+        const closeBtn = document.querySelector('.scheme-modal-close');
+
+        if (schemeImage && modal && modalImg) {
+            // Открытие модального окна при клике на изображение
+            schemeImage.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = schemeImage.src;
+                document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+            });
+
+            // Закрытие модального окна
+            function closeModal() {
+                modal.classList.remove('show');
+                document.body.style.overflow = ''; // Восстанавливаем прокрутку
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeModal);
+            }
+
+            // Закрытие при клике вне изображения
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Закрытие по клавише Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    closeModal();
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>
