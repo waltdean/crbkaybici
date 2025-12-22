@@ -500,6 +500,16 @@ body {
     background: var(--white);
 }
 
+.section-intro {
+    margin-top: 8px;
+    margin-bottom: 32px;
+    color: var(--text-light);
+}
+
+.section-intro-centered {
+    text-align: center;
+}
+
 .simple-card {
     background: var(--white);
     border-radius: 12px;
@@ -507,6 +517,16 @@ body {
     box-shadow: var(--shadow);
     line-height: 1.7;
     color: var(--text-light);
+}
+
+.simple-card--with-gap .documents-list {
+    margin-top: 8px;
+}
+
+.simple-card ol,
+.simple-card ul {
+    margin-left: 2em;
+    padding-left: 0;
 }
 
 /* Полезные ссылки */
@@ -727,6 +747,11 @@ body {
 .document-icon--word {
     background: rgba(37, 99, 235, 0.12);
     color: #2563eb;
+}
+
+.document-icon--excel {
+    background: rgba(34, 197, 94, 0.12);
+    color: #22c55e;
 }
 
 @media (max-width: 768px) {
