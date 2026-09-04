@@ -875,19 +875,35 @@ section {
     line-height: 1.1;
 }
 
-/* Плакат Госуслуги */
+/* Плакаты */
 .plakat-section {
     background-color: var(--white);
     padding: 60px 0;
     text-align: center;
 }
 
+.plakat-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+}
+
 .plakat-image {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
+    height: 640px;
+    width: auto;
+    max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 992px) {
+    .plakat-image {
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+    }
 }
 
 /* Схема больницы */
