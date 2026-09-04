@@ -884,25 +884,26 @@ section {
 
 .plakat-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
 }
 
+/* Оба плаката формата A4, поэтому при равной ширине совпадает и высота */
 .plakat-image {
-    height: 640px;
-    width: auto;
-    max-width: 100%;
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
 }
 
-@media (max-width: 992px) {
-    .plakat-image {
-        height: auto;
-        width: 100%;
-        max-width: 600px;
+@media (max-width: 768px) {
+    .plakat-container {
+        gap: 12px;
     }
 }
 
