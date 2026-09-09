@@ -899,6 +899,13 @@ section {
     max-width: 360px;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plakat-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-hover);
 }
 
 /* Горизонтальный блок (видео) занимает больше места, чтобы текст оставался читаемым */
@@ -972,7 +979,7 @@ section {
     box-shadow: var(--shadow-hover);
 }
 
-/* Модальное окно для схемы */
+/* Модальное окно для схемы и плакатов */
 .scheme-modal {
     display: none;
     position: fixed;

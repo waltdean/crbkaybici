@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <!-- Модальное окно для схемы -->
+    <!-- Модальное окно для схемы и плакатов -->
     <div id="scheme-modal" class="scheme-modal">
         <span class="scheme-modal-close">&times;</span>
         <img class="scheme-modal-content" id="scheme-modal-img" src="" alt="Схема больницы">
@@ -245,19 +245,22 @@
 </script>
 
 <script>
-    // Модальное окно для схемы больницы
+    // Модальное окно для схемы больницы и плакатов
     document.addEventListener('DOMContentLoaded', function() {
-        const schemeImage = document.getElementById('scheme-image');
+        const zoomableImages = document.querySelectorAll('#scheme-image, .plakat-image');
         const modal = document.getElementById('scheme-modal');
         const modalImg = document.getElementById('scheme-modal-img');
         const closeBtn = document.querySelector('.scheme-modal-close');
 
-        if (schemeImage && modal && modalImg) {
+        if (zoomableImages.length && modal && modalImg) {
             // Открытие модального окна при клике на изображение
-            schemeImage.addEventListener('click', function() {
-                modal.classList.add('show');
-                modalImg.src = schemeImage.src;
-                document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+            zoomableImages.forEach(function(image) {
+                image.addEventListener('click', function() {
+                    modal.classList.add('show');
+                    modalImg.src = image.src;
+                    modalImg.alt = image.alt;
+                    document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+                });
             });
 
             // Закрытие модального окна
