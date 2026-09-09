@@ -920,6 +920,48 @@ section {
     min-width: 0;
 }
 
+.plakat-video-frame {
+    position: relative;
+}
+
+/* Оверлей на время буферизации видео */
+.video-loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 15px;
+    pointer-events: none; /* не перекрываем элементы управления плеером */
+}
+
+.video-loader[hidden] {
+    display: none;
+}
+
+.video-loader-spinner {
+    width: 42px;
+    height: 42px;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .plakat-video-player {
     display: block;
     width: 100%;

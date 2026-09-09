@@ -69,13 +69,19 @@
             <img src="news/img/plakat_dispanserizatsiya.jpg" alt="Диспансеризация — бесплатное профилактическое медицинское обследование" class="plakat-image" loading="lazy">
             <img src="news/img/plakat_psihologicheskaya_podderzhka_svo.jpg" alt="Медико-психологическая поддержка участников СВО и членов их семей" class="plakat-image" loading="lazy">
             <figure class="plakat-video">
-                <video class="plakat-video-player" controls preload="none" playsinline
-                       poster="news/video/instrukciya_gosuslugi_rt_poster.jpg">
-                    <source src="news/video/instrukciya_gosuslugi_rt.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает воспроизведение видео.
-                    <a href="news/video/instrukciya_gosuslugi_rt.mp4">Скачать видео</a>
-                </video>
-                <figcaption class="plakat-video-caption">Видеоинструкция: портал Госуслуг Республики Татарстан</figcaption>
+                <div class="plakat-video-frame">
+                    <video class="plakat-video-player" controls preload="none" playsinline
+                           poster="news/video/kak_ocenit_kachestvo_uslug_poster.jpg">
+                        <source src="news/video/kak_ocenit_kachestvo_uslug.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает воспроизведение видео.
+                        <a href="news/video/kak_ocenit_kachestvo_uslug.mp4">Скачать видео</a>
+                    </video>
+                    <div class="video-loader" hidden>
+                        <span class="video-loader-spinner"></span>
+                        <span>Загрузка видео…</span>
+                    </div>
+                </div>
+                <figcaption class="plakat-video-caption">Как оценить качество предоставляемых услуг</figcaption>
             </figure>
         </div>
     </section>
@@ -242,6 +248,40 @@
     } else {
         renderStaticFallback();
     }
+</script>
+
+<script>
+    // Индикатор загрузки видео: показываем, пока данных не хватает для воспроизведения
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.plakat-video-frame').forEach(function(frame) {
+            const video = frame.querySelector('.plakat-video-player');
+            const loader = frame.querySelector('.video-loader');
+
+            if (!video || !loader) return;
+
+            function showLoader() {
+                loader.hidden = false;
+            }
+
+            function hideLoader() {
+                loader.hidden = true;
+            }
+
+            video.addEventListener('play', function() {
+                // readyState < HAVE_FUTURE_DATA — воспроизведение начнётся не сразу
+                if (video.readyState < 3) {
+                    showLoader();
+                }
+            });
+
+            video.addEventListener('waiting', showLoader);
+            video.addEventListener('stalled', showLoader);
+            video.addEventListener('playing', hideLoader);
+            video.addEventListener('canplay', hideLoader);
+            video.addEventListener('pause', hideLoader);
+            video.addEventListener('error', hideLoader);
+        });
+    });
 </script>
 
 <script>
