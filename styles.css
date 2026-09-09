@@ -901,10 +901,32 @@ section {
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
 }
 
-/* Горизонтальный плакат занимает больше места, чтобы текст оставался читаемым */
-.plakat-image-wide {
+/* Горизонтальный блок (видео) занимает больше места, чтобы текст оставался читаемым */
+.plakat-image-wide,
+.plakat-video {
     flex: 1 1 480px;
     max-width: 740px;
+}
+
+.plakat-video {
+    margin: 0;
+    min-width: 0;
+}
+
+.plakat-video-player {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.plakat-video-caption {
+    margin-top: 12px;
+    font-size: 15px;
+    color: var(--text-light, #6b7280);
 }
 
 @media (max-width: 768px) {
@@ -913,7 +935,8 @@ section {
     }
 
     .plakat-image,
-    .plakat-image-wide {
+    .plakat-image-wide,
+    .plakat-video {
         flex-basis: 100%;
         max-width: 480px;
     }
