@@ -884,26 +884,38 @@ section {
 
 .plakat-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
 }
 
-/* Оба плаката формата A4, поэтому при равной ширине совпадает и высота */
+/* Вертикальные плакаты (A4 и квадратные) выстраиваются по три в ряд */
 .plakat-image {
-    flex: 1 1 0;
+    flex: 1 1 280px;
     min-width: 0;
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 360px;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
 }
 
+/* Горизонтальный плакат занимает больше места, чтобы текст оставался читаемым */
+.plakat-image-wide {
+    flex: 1 1 480px;
+    max-width: 740px;
+}
+
 @media (max-width: 768px) {
     .plakat-container {
-        gap: 12px;
+        gap: 16px;
+    }
+
+    .plakat-image,
+    .plakat-image-wide {
+        flex-basis: 100%;
+        max-width: 480px;
     }
 }
 
