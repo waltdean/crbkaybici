@@ -6,10 +6,56 @@
     <title>Сотрудники — Кайбицкая центральная районная больница</title>
     <link rel="icon" type="image/png" href="../data/logo_nobg.png">
     <link rel="stylesheet" href="../styles.css">
-    <script src="../js/load-components.js" defer></script>
+    <script src="/js/site.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+    <!-- header:start -->
+    <!-- Не редактировать вручную: собирается из components/header.html через tools/build-layout.py -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <img src="/data/logo_nobg.png" alt="Логотип ГАУЗ Кайбицкая ЦРБ">
+                    <h1>ГАУЗ Кайбицкая ЦРБ</h1>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a href="/index.html#about">О больнице</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/index.html#about">О больнице</a></li>
+                                <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                                <li><a href="/about/schedule.html">График работы</a></li>
+                                <li><a href="/employees/employees.html">Сотрудники</a></li>
+                                <li><a href="/news/news.html">Новости</a></li>
+                                <li><a href="/docs/documents.html">Документы</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Специалистам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Пациентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/services/pregnant.html">Для беременных</a></li>
+                                <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                                <li><a href="/services/paid.html">Платные услуги</a></li>
+                                <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/index.html#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-phone">
+                    <a href="tel:+78437021332">+7 (843) 702-13-32</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header:end -->
 
     <main class="simple-page">
         <div class="container">
@@ -262,7 +308,57 @@
         </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <!-- footer:start -->
+    <!-- Не редактировать вручную: собирается из components/footer.html через tools/build-layout.py -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><a href="tel:+78437021332">+7 (843) 702-13-32</a></p>
+                    <p><a href="mailto:Ilsiyar.Sungatullina@tatar.ru">Ilsiyar.Sungatullina@tatar.ru</a></p>
+                    <div class="social-links">
+                        <a href="https://vk.com/public217117229" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="ВКонтакте">
+                            ВК
+                        </a>
+                        <a href="https://max.ru/id1621000421_gos" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="MAX">
+                            MAX
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>О больнице</h3>
+                    <ul>
+                        <li><a href="/index.html#about">О больнице</a></li>
+                        <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                        <li><a href="/about/schedule.html">График работы</a></li>
+                        <li><a href="/employees/employees.html">Сотрудники</a></li>
+                        <li><a href="/news/news.html">Новости</a></li>
+                        <li><a href="/docs/documents.html">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Специалистам</h3>
+                    <ul>
+                        <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Пациентам</h3>
+                    <ul>
+                        <li><a href="/services/pregnant.html">Для беременных</a></li>
+                        <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                        <li><a href="/services/paid.html">Платные услуги</a></li>
+                        <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ГАУЗ Кайбицкая ЦРБ</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer:end -->
 </body>
 </html>
 
