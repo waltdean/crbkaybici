@@ -31,6 +31,8 @@
                                 <li><a href="/employees/employees.html">Сотрудники</a></li>
                                 <li><a href="/news/news.html">Новости</a></li>
                                 <li><a href="/docs/documents.html">Документы</a></li>
+                                <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                                <li><a href="/sitemap.html">Карта сайта</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -51,12 +53,46 @@
                         <li><a href="/index.html#contacts">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="header-phone">
-                    <a href="tel:+78437021332">+7 (843) 702-13-32</a>
+                <div class="header-tools">
+                    <form class="header-search" action="/search.html" method="get" role="search">
+                        <input type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                        <button type="submit">Найти</button>
+                    </form>
+                    <button type="button" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+                        Версия для слабовидящих
+                    </button>
+                    <div class="header-phone">
+                        <a href="tel:+78437021332">+7 (843) 702-13-32</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="a11y-panel" id="a11y-panel" hidden>
+        <div class="container a11y-panel-inner">
+            <div class="a11y-group">
+                <span>Размер шрифта:</span>
+                <button type="button" data-a11y-set="font" data-a11y-value="normal" aria-pressed="true">А</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="large" aria-pressed="false">А+</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="xlarge" aria-pressed="false">А++</button>
+            </div>
+            <div class="a11y-group">
+                <span>Цвета:</span>
+                <button type="button" data-a11y-set="theme" data-a11y-value="white" aria-pressed="true">Ч/Б</button>
+                <button type="button" class="a11y-swatch-black" data-a11y-set="theme" data-a11y-value="black" aria-pressed="false">Б/Ч</button>
+                <button type="button" class="a11y-swatch-blue" data-a11y-set="theme" data-a11y-value="blue" aria-pressed="false">Синий</button>
+            </div>
+            <div class="a11y-group">
+                <span>Изображения:</span>
+                <button type="button" data-a11y-set="images" data-a11y-value="on" aria-pressed="true">Вкл</button>
+                <button type="button" data-a11y-set="images" data-a11y-value="off" aria-pressed="false">Выкл</button>
+            </div>
+            <div class="a11y-group">
+                <button type="button" class="a11y-off">Обычная версия</button>
+            </div>
+        </div>
+    </div>
     <!-- header:end -->
 
     <!-- Главный баннер -->
@@ -226,6 +262,9 @@
                         <li><a href="/employees/employees.html">Сотрудники</a></li>
                         <li><a href="/news/news.html">Новости</a></li>
                         <li><a href="/docs/documents.html">Документы</a></li>
+                        <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                        <li><a href="/sitemap.html">Карта сайта</a></li>
+                        <li><a href="/search.html">Поиск по сайту</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

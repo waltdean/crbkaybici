@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Платные услуги — Кайбицкая центральная районная больница</title>
-    <link rel="icon" type="image/png" href="../data/logo_nobg.png">
-    <link rel="stylesheet" href="../styles.css">
+    <title>Поиск по сайту — Кайбицкая центральная районная больница</title>
+    <meta name="description" content="Поиск по разделам и страницам сайта ГАУЗ «Кайбицкая ЦРБ».">
+    <link rel="icon" type="image/png" href="data/logo_nobg.png">
+    <link rel="stylesheet" href="styles.css">
     <script src="/js/site.js" defer></script>
+    <script src="/js/search.js" defer></script>
 </head>
 <body>
     <!-- header:start -->
@@ -95,10 +97,22 @@
 
     <main class="simple-page">
         <div class="container">
-            <h2 class="section-title">Платные услуги</h2>
-            <p class="section-subtitle">Перечень платных услуг и прейскурант</p>
+            <h2 class="section-title">Поиск по сайту</h2>
+
+            <form class="search-form" id="search-form" role="search">
+                <input type="search" id="search-input" name="q" placeholder="Например: диспансеризация" aria-label="Поисковый запрос">
+                <button type="submit">Найти</button>
+            </form>
+
+            <p class="search-status" id="search-status">Введите запрос — поиск идёт по всем страницам сайта.</p>
+
+            <div id="search-results"></div>
+
             <div class="simple-card">
-                <p>Раздел в разработке. Здесь будет размещён перечень платных услуг и актуальный прейскурант.</p>
+                <p>
+                    Не нашли нужное? Посмотрите <a href="/sitemap.html">карту сайта</a>
+                    или позвоните в регистратуру: <a href="tel:+78437021332">+7 (843) 702-13-32</a>.
+                </p>
             </div>
         </div>
     </main>
@@ -159,4 +173,3 @@
     <!-- footer:end -->
 </body>
 </html>
-
