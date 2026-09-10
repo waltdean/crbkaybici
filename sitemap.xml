@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://crbkaybitsy.ru/about/details.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/about/polyclinic.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://crbkaybitsy.ru/about/schedule.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://crbkaybitsy.ru/about/structure.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
     </url>
@@ -276,6 +286,11 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://crbkaybitsy.ru/services/insurance.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/services/paid.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
@@ -286,7 +301,22 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://crbkaybitsy.ru/services/rights.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://crbkaybitsy.ru/services/treatment-methods.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/services/useful-links.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://crbkaybitsy.ru/services/waiting-times.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
     </url>
