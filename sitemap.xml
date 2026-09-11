@@ -6,6 +6,11 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://crbkaybitsy.ru/about/license.html</loc>
+        <lastmod>2026-09-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/about/polyclinic.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
@@ -231,6 +236,11 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://crbkaybitsy.ru/employees/qualifications.html</loc>
+        <lastmod>2026-09-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/index.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>1.0</priority>
@@ -286,6 +296,11 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://crbkaybitsy.ru/services/feedback.html</loc>
+        <lastmod>2026-09-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://crbkaybitsy.ru/services/insurance.html</loc>
         <lastmod>2026-09-10</lastmod>
         <priority>0.8</priority>
@@ -303,6 +318,16 @@
     <url>
         <loc>https://crbkaybitsy.ru/services/rights.html</loc>
         <lastmod>2026-09-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://crbkaybitsy.ru/services/rules.html</loc>
+        <lastmod>2026-09-11</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://crbkaybitsy.ru/services/state-guarantees.html</loc>
+        <lastmod>2026-09-11</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
