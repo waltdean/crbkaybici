@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400"
+     role="img" aria-label="Всемирный день безопасности пациентов, 17 сентября 2026 года">
+  <title>Всемирный день безопасности пациентов, 17 сентября 2026 года</title>
+  <rect width="720" height="400" fill="#eef4fb"/>
+  <circle cx="660" cy="-30" r="210" fill="#dce9f7"/>
+  <circle cx="700" cy="420" r="150" fill="#dce9f7"/>
+  <g transform="translate(74 118)">
+    <path d="M56 0 L112 22 V70 C112 108 86 136 56 148 C26 136 0 108 0 70 V22 Z"
+          fill="#1f6fb2"/>
+    <path d="M48 44 h16 v20 h20 v16 h-20 v20 h-16 v-20 h-20 v-16 h20 z" fill="#ffffff"/>
+  </g>
+  <text font-family="'Montserrat','Segoe UI',Tahoma,Geneva,Verdana,sans-serif" font-size="36" font-weight="700" fill="#134a78">
+    <tspan x="230" y="150">Всемирный день</tspan><tspan x="230" y="196">безопасности</tspan><tspan x="230" y="242">пациентов</tspan>
+  </text>
+  <text x="230" y="296" font-family="'Montserrat','Segoe UI',Tahoma,Geneva,Verdana,sans-serif" font-size="22" fill="#134a78" opacity="0.75">17 сентября 2026 года</text>
+</svg>

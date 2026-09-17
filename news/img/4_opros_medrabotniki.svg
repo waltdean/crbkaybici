@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400"
+     role="img" aria-label="Опрос для медицинских работников ко Всемирному дню безопасности пациентов">
+  <title>Опрос для медицинских работников ко Всемирному дню безопасности пациентов</title>
+  <rect width="720" height="400" fill="#eef7f0"/>
+  <circle cx="660" cy="-30" r="210" fill="#dcefe2"/>
+  <circle cx="700" cy="420" r="150" fill="#dcefe2"/>
+  <g transform="translate(78 112)">
+    <rect x="0" y="12" width="108" height="140" rx="12" fill="#ffffff" stroke="#3a8f5a" stroke-width="5"/>
+    <rect x="34" y="0" width="40" height="24" rx="8" fill="#3a8f5a"/>
+    <g fill="none" stroke="#3a8f5a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 52 l10 10 l18 -20"/>
+      <path d="M20 90 l10 10 l18 -20"/>
+      <path d="M20 128 l10 10 l18 -20"/>
+    </g>
+    <g fill="#3a8f5a" opacity="0.35">
+      <rect x="58" y="50" width="34" height="7" rx="3.5"/>
+      <rect x="58" y="88" width="34" height="7" rx="3.5"/>
+      <rect x="58" y="126" width="34" height="7" rx="3.5"/>
+    </g>
+  </g>
+  <text font-family="'Montserrat','Segoe UI',Tahoma,Geneva,Verdana,sans-serif" font-size="36" font-weight="700" fill="#1d5c39">
+    <tspan x="230" y="150">Опрос для</tspan><tspan x="230" y="196">медицинских</tspan><tspan x="230" y="242">работников</tspan>
+  </text>
+  <text x="230" y="296" font-family="'Montserrat','Segoe UI',Tahoma,Geneva,Verdana,sans-serif" font-size="22" fill="#1d5c39" opacity="0.75">Всемирный день безопасности пациентов</text>
+</svg>
