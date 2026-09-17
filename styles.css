@@ -1831,3 +1831,39 @@ html[data-a11y="on"] .data-table .row-group td {
     color: var(--a11y-fg) !important;
     border-color: var(--a11y-fg) !important;
 }
+
+/* QR-код проверки лицензии */
+.qr-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.qr-code {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.qr-block > div {
+    flex: 1 1 260px;
+    min-width: 0;
+}
+
+.qr-block h4 {
+    margin: 0 0 8px;
+}
+
+/* В версии для слабовидящих QR должен оставаться чёрным на белом */
+html[data-a11y="on"] .qr-code {
+    background-color: #ffffff !important;
+    border-color: var(--a11y-fg) !important;
+}
