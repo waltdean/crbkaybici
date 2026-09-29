@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const words = value.toLowerCase().split(/\s+/).filter(Boolean);
 
         if (!words.length) {
-            status.textContent = 'Введите запрос — поиск идёт по всем страницам сайта.';
+            status.textContent = 'Введите запрос - поиск идёт по всем страницам сайта.';
             results.innerHTML = '';
             return;
         }

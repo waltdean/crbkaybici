@@ -110,7 +110,7 @@ function initAccessibility() {
         try {
             localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
         } catch (e) {
-            // Приватный режим браузера — настройки просто не переживут перезагрузку
+            // Приватный режим браузера - настройки просто не переживут перезагрузку
         }
     }
 

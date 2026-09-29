@@ -56,7 +56,7 @@ def main():
 
         title = re.search(r'<title>(.*?)</title>', markup, re.DOTALL)
         title = html.unescape(title.group(1)).strip() if title else rel
-        title = title.split('—')[0].strip() or title
+        title = title.split('-')[0].strip() or title
 
         headings = [text_of(m) for m in
                     re.findall(r'<h[1-4][^>]*>(.*?)</h[1-4]>', body, re.DOTALL)]
