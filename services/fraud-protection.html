@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Защита от мошенников в сети — Кайбицкая центральная районная больница</title>
+    <meta name="description" content="Как распознать телефонных и интернет-мошенников, которые представляются сотрудниками поликлиники, и что делать, если вы уже сообщили им данные. Официальные сервисы защиты на портале госуслуг.">
+    <link rel="icon" type="image/png" href="../data/logo_nobg.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="/js/site.js" defer></script>
+</head>
+<body>
+    <!-- header:start -->
+    <!-- Не редактировать вручную: собирается из components/header.html через tools/build-layout.py -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <img src="/data/logo_nobg.png" alt="Логотип ГАУЗ Кайбицкая ЦРБ">
+                    <h1>ГАУЗ Кайбицкая ЦРБ</h1>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a href="/index.html#about">О больнице</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/index.html#about">О больнице</a></li>
+                                <li><a href="/about/details.html">Сведения об организации</a></li>
+                                <li><a href="/about/structure.html">Структура и органы управления</a></li>
+                                <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                                <li><a href="/about/schedule.html">График работы</a></li>
+                                <li><a href="/employees/employees.html">Сотрудники</a></li>
+                                <li><a href="/news/news.html">Новости</a></li>
+                                <li><a href="/docs/documents.html">Документы</a></li>
+                                <li><a href="/about/license.html">Лицензия</a></li>
+                                <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                                <li><a href="/sitemap.html">Карта сайта</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Специалистам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                                <li><a href="/employees/qualifications.html">Квалификация медработников</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Пациентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/services/pregnant.html">Для беременных</a></li>
+                                <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                                <li><a href="/services/paid.html">Платные услуги</a></li>
+                                <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                                <li><a href="/services/rights.html">Права и обязанности граждан</a></li>
+                                <li><a href="/services/insurance.html">Страховые организации</a></li>
+                                <li><a href="/services/waiting-times.html">Сроки ожидания помощи</a></li>
+                                <li><a href="/services/treatment-methods.html">Методы оказания помощи</a></li>
+                                <li><a href="/services/state-guarantees.html">Программа госгарантий</a></li>
+                                <li><a href="/services/medicines.html">Лекарственное обеспечение</a></li>
+                                <li><a href="/services/quality-indicators.html">Показатели качества помощи</a></li>
+                                <li><a href="/services/rules.html">Правила внутреннего распорядка</a></li>
+                                <li><a href="/services/feedback.html">Отзывы и оценка качества</a></li>
+                                <li><a href="/services/fraud-protection.html">Защита от мошенников</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/index.html#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-tools">
+                    <form class="header-search" action="/search.html" method="get" role="search">
+                        <input type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                        <button type="submit">Найти</button>
+                    </form>
+                    <button type="button" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+                        Версия для слабовидящих
+                    </button>
+                    <div class="header-phone">
+                        <a href="tel:+78437021332">+7 (843) 702-13-32</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="a11y-panel" id="a11y-panel" hidden>
+        <div class="container a11y-panel-inner">
+            <div class="a11y-group">
+                <span>Размер шрифта:</span>
+                <button type="button" data-a11y-set="font" data-a11y-value="normal" aria-pressed="true">А</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="large" aria-pressed="false">А+</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="xlarge" aria-pressed="false">А++</button>
+            </div>
+            <div class="a11y-group">
+                <span>Цвета:</span>
+                <button type="button" data-a11y-set="theme" data-a11y-value="white" aria-pressed="true">Ч/Б</button>
+                <button type="button" class="a11y-swatch-black" data-a11y-set="theme" data-a11y-value="black" aria-pressed="false">Б/Ч</button>
+                <button type="button" class="a11y-swatch-blue" data-a11y-set="theme" data-a11y-value="blue" aria-pressed="false">Синий</button>
+            </div>
+            <div class="a11y-group">
+                <span>Изображения:</span>
+                <button type="button" data-a11y-set="images" data-a11y-value="on" aria-pressed="true">Вкл</button>
+                <button type="button" data-a11y-set="images" data-a11y-value="off" aria-pressed="false">Выкл</button>
+            </div>
+            <div class="a11y-group">
+                <button type="button" class="a11y-off">Обычная версия</button>
+            </div>
+        </div>
+    </div>
+    <!-- header:end -->
+
+    <main class="simple-page">
+        <div class="container">
+            <h2 class="section-title">Защита от мошенников в сети</h2>
+            <p class="section-subtitle">
+                Как распознать обман, который маскируется под запись к врачу, диспансеризацию
+                или оформление полиса ОМС
+            </p>
+
+            <div class="simple-card">
+                <h3>Главное правило</h3>
+                <p>
+                    <strong>Сотрудники больницы никогда не спрашивают код из СМС.</strong>
+                    Ни при записи на приём, ни при подтверждении диспансеризации,
+                    ни при оформлении любых документов.
+                </p>
+                <p>
+                    Мы также не запрашиваем номер банковской карты, её срок действия,
+                    трёхзначный код с оборота и пароли от портала госуслуг, не просим
+                    установить программу удалённого доступа и не предлагаем перевести
+                    деньги на карту частного лица.
+                </p>
+                <p>
+                    Если по телефону просят что-то из перечисленного — это мошенники,
+                    кем бы они ни представлялись. Положите трубку.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Как обычно действуют мошенники</h3>
+                <p>Под видом медицинской организации чаще всего используют такие поводы:</p>
+                <ul>
+                    <li>
+                        «Подтвердите запись к врачу» или «перенесём вашу запись» —
+                        и просят назвать код из СМС;
+                    </li>
+                    <li>
+                        «Вас приглашают на бесплатную диспансеризацию, продиктуйте
+                        данные полиса и паспорта»;
+                    </li>
+                    <li>
+                        «Ваш полис ОМС устарел, его нужно срочно переоформить»;
+                    </li>
+                    <li>
+                        «Пришли результаты анализов, перейдите по ссылке» —
+                        ссылка ведёт на поддельный сайт, похожий на госуслуги;
+                    </li>
+                    <li>
+                        предложение дорогого обследования, лекарства или «чудо-прибора»
+                        с оплатой на карту;
+                    </li>
+                    <li>
+                        звонок «из поликлиники», который затем переключают
+                        на «сотрудника банка» или «полиции».
+                    </li>
+                </ul>
+                <p>
+                    Признаки обмана почти всегда одни и те же: вас торопят, пугают
+                    последствиями, просят никому не рассказывать о разговоре
+                    и не дают положить трубку.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Что делать при подозрительном звонке</h3>
+                <ol>
+                    <li>Прервите разговор. Вежливо попрощаться и положить трубку — нормально.</li>
+                    <li>
+                        Перезвоните в регистратуру сами по номеру с этого сайта:
+                        <a href="tel:+78437021332">+7 (843) 702-13-32</a>.
+                        Не перезванивайте по номеру, который вам продиктовали или прислали в СМС.
+                    </li>
+                    <li>
+                        Проверить свою запись к врачу можно самостоятельно — через портал
+                        госуслуг или по единому номеру <a href="tel:122">122</a>.
+                    </li>
+                    <li>Не переходите по ссылкам из сообщений от незнакомых отправителей.</li>
+                    <li>Расскажите о звонке пожилым родственникам — чаще всего звонят именно им.</li>
+                </ol>
+            </div>
+
+            <div class="simple-card">
+                <h3>Если вы уже сообщили данные или перевели деньги</h3>
+                <ol>
+                    <li>
+                        Сразу позвоните в банк по номеру на обратной стороне карты
+                        и заблокируйте карту и доступ в мобильный банк.
+                    </li>
+                    <li>Смените пароль на портале госуслуг и включите вход по двум факторам.</li>
+                    <li>
+                        Обратитесь в полицию: единый номер <a href="tel:102">102</a>
+                        или <a href="tel:112">112</a>. Сохраните переписку, номера телефонов,
+                        чеки и выписки — они понадобятся для заявления.
+                    </li>
+                    <li>Проверьте кредитную историю: не оформлены ли на вас кредиты или займы.</li>
+                </ol>
+                <p>
+                    Чем раньше вы обратитесь в банк, тем выше шанс остановить перевод.
+                </p>
+            </div>
+
+            <div class="simple-card simple-card--with-gap">
+                <h3>Официальные сервисы защиты</h3>
+                <p>
+                    На портале госуслуг собраны бесплатные инструменты, которые помогают
+                    защититься заранее:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Самозапрет на кредиты.</strong> Действует с 1 марта 2025 года.
+                        Отметка вносится в кредитную историю, и банки обязаны отказать
+                        в выдаче кредита. Распространяется на необеспеченные кредиты и займы.
+                    </li>
+                    <li>
+                        <strong>Самозапрет на оформление SIM-карт.</strong> Оформляется
+                        через портал госуслуг или в МФЦ. Операторы связи обязаны проверять
+                        запрет перед выдачей новой SIM-карты.
+                    </li>
+                    <li>
+                        <strong>Проверка SIM-карт, оформленных на ваш паспорт</strong>,
+                        и проверка кредитной истории.
+                    </li>
+                    <li>
+                        <strong>Жалоба на мошеннический сайт или звонок.</strong>
+                    </li>
+                </ul>
+                <ul class="documents-list">
+                    <li>
+                        <a href="https://www.gosuslugi.ru/scammer_protection" target="_blank" rel="noopener noreferrer">
+                            Защита от мошенников — портал госуслуг
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.gosuslugi.ru/help/faq/credit_lock/262252" target="_blank" rel="noopener noreferrer">
+                            Как установить запрет на получение кредитов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cbr.ru/ckki/self-prohibition_credit/" target="_blank" rel="noopener noreferrer">
+                            Самозапрет на потребительские кредиты — Банк России
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="simple-card">
+                <h3>Куда обратиться</h3>
+                <p>
+                    Полиция: <a href="tel:102">102</a>, единый номер экстренных служб
+                    <a href="tel:112">112</a>.<br>
+                    Регистратура больницы: <a href="tel:+78437021332">+7 (843) 702-13-32</a>.<br>
+                    Единая справочная служба здравоохранения: <a href="tel:122">122</a>.
+                </p>
+                <p>
+                    Если звонивший представился сотрудником нашей больницы, сообщите
+                    нам об этом — контакты указаны на странице
+                    <a href="/services/feedback.html">Отзывы и оценка качества</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer:start -->
+    <!-- Не редактировать вручную: собирается из components/footer.html через tools/build-layout.py -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><a href="tel:+78437021332">+7 (843) 702-13-32</a></p>
+                    <p><a href="mailto:Ilsiyar.Sungatullina@tatar.ru">Ilsiyar.Sungatullina@tatar.ru</a></p>
+                    <div class="social-links">
+                        <a href="https://vk.com/public217117229" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="ВКонтакте">
+                            ВК
+                        </a>
+                        <a href="https://max.ru/id1621000421_gos" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="MAX">
+                            MAX
+                        </a>
+                        <a href="https://yandex.ru/maps/org/kaybitskaya_tsentralnaya_rayonnaya_bolnitsa/1880862634/reviews/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Отзывы на Яндекс Картах">
+                            Отзывы
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>О больнице</h3>
+                    <ul>
+                        <li><a href="/index.html#about">О больнице</a></li>
+                        <li><a href="/about/details.html">Сведения об организации</a></li>
+                        <li><a href="/about/structure.html">Структура и органы управления</a></li>
+                        <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                        <li><a href="/about/schedule.html">График работы</a></li>
+                        <li><a href="/employees/employees.html">Сотрудники</a></li>
+                        <li><a href="/news/news.html">Новости</a></li>
+                        <li><a href="/docs/documents.html">Документы</a></li>
+                        <li><a href="/about/license.html">Лицензия</a></li>
+                        <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                        <li><a href="/sitemap.html">Карта сайта</a></li>
+                        <li><a href="/search.html">Поиск по сайту</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Специалистам</h3>
+                    <ul>
+                        <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Пациентам</h3>
+                    <ul>
+                        <li><a href="/services/pregnant.html">Для беременных</a></li>
+                        <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                        <li><a href="/services/paid.html">Платные услуги</a></li>
+                        <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                        <li><a href="/services/state-guarantees.html">Программа госгарантий</a></li>
+                        <li><a href="/services/medicines.html">Лекарственное обеспечение</a></li>
+                        <li><a href="/services/quality-indicators.html">Показатели качества помощи</a></li>
+                        <li><a href="/services/rules.html">Правила внутреннего распорядка</a></li>
+                        <li><a href="/services/feedback.html">Отзывы и оценка качества</a></li>
+                        <li><a href="/services/fraud-protection.html">Защита от мошенников</a></li>
+                        <li><a href="/services/rights.html">Права и обязанности граждан</a></li>
+                        <li><a href="/services/insurance.html">Страховые организации</a></li>
+                        <li><a href="/services/waiting-times.html">Сроки ожидания помощи</a></li>
+                        <li><a href="/services/treatment-methods.html">Методы оказания помощи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ГАУЗ Кайбицкая ЦРБ</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer:end -->
+</body>
+</html>
