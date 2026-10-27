@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила посещения пациентов - Кайбицкая центральная районная больница</title>
+    <meta name="description" content="Правила доступа в медицинскую организацию и посещения пациентов в стационаре ГАУЗ «Кайбицкая ЦРБ»: часы посещения, требования к посетителям, посещение в отделении реанимации, передачи для пациентов.">
+    <link rel="icon" type="image/png" href="../data/logo_nobg.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="/js/site.js" defer></script>
+</head>
+<body>
+    <!-- header:start -->
+    <!-- Не редактировать вручную: собирается из components/header.html через tools/build-layout.py -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <img src="/data/logo_nobg.png" alt="Логотип ГАУЗ Кайбицкая ЦРБ">
+                    <h1>ГАУЗ Кайбицкая ЦРБ</h1>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <a href="/index.html#about">О больнице</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/index.html#about">О больнице</a></li>
+                                <li><a href="/about/details.html">Сведения об организации</a></li>
+                                <li><a href="/about/structure.html">Структура и органы управления</a></li>
+                                <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                                <li><a href="/about/schedule.html">График работы</a></li>
+                                <li><a href="/employees/employees.html">Сотрудники</a></li>
+                                <li><a href="/news/news.html">Новости</a></li>
+                                <li><a href="/docs/documents.html">Документы</a></li>
+                                <li><a href="/about/license.html">Лицензия</a></li>
+                                <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                                <li><a href="/sitemap.html">Карта сайта</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Специалистам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                                <li><a href="/employees/qualifications.html">Квалификация медработников</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/index.html#services">Пациентам</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/services/pregnant.html">Для беременных</a></li>
+                                <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                                <li><a href="/services/paid.html">Платные услуги</a></li>
+                                <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                                <li><a href="/services/rights.html">Права и обязанности граждан</a></li>
+                                <li><a href="/services/insurance.html">Страховые организации</a></li>
+                                <li><a href="/services/waiting-times.html">Сроки ожидания помощи</a></li>
+                                <li><a href="/services/treatment-methods.html">Методы оказания помощи</a></li>
+                                <li><a href="/services/state-guarantees.html">Программа госгарантий</a></li>
+                                <li><a href="/services/medicines.html">Лекарственное обеспечение</a></li>
+                                <li><a href="/services/quality-indicators.html">Показатели качества помощи</a></li>
+                                <li><a href="/services/rules.html">Правила внутреннего распорядка</a></li>
+                                <li><a href="/services/visiting.html">Правила посещения пациентов</a></li>
+                                <li><a href="/services/feedback.html">Отзывы и оценка качества</a></li>
+                                <li><a href="/services/fraud-protection.html">Защита от мошенников</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/index.html#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-tools">
+                    <form class="header-search" action="/search.html" method="get" role="search">
+                        <input type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                        <button type="submit">Найти</button>
+                    </form>
+                    <button type="button" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">
+                        Версия для слабовидящих
+                    </button>
+                    <div class="header-phone">
+                        <a href="tel:+78437021332">+7 (843) 702-13-32</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="a11y-panel" id="a11y-panel" hidden>
+        <div class="container a11y-panel-inner">
+            <div class="a11y-group">
+                <span>Размер шрифта:</span>
+                <button type="button" data-a11y-set="font" data-a11y-value="normal" aria-pressed="true">А</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="large" aria-pressed="false">А+</button>
+                <button type="button" data-a11y-set="font" data-a11y-value="xlarge" aria-pressed="false">А++</button>
+            </div>
+            <div class="a11y-group">
+                <span>Цвета:</span>
+                <button type="button" data-a11y-set="theme" data-a11y-value="white" aria-pressed="true">Ч/Б</button>
+                <button type="button" class="a11y-swatch-black" data-a11y-set="theme" data-a11y-value="black" aria-pressed="false">Б/Ч</button>
+                <button type="button" class="a11y-swatch-blue" data-a11y-set="theme" data-a11y-value="blue" aria-pressed="false">Синий</button>
+            </div>
+            <div class="a11y-group">
+                <span>Изображения:</span>
+                <button type="button" data-a11y-set="images" data-a11y-value="on" aria-pressed="true">Вкл</button>
+                <button type="button" data-a11y-set="images" data-a11y-value="off" aria-pressed="false">Выкл</button>
+            </div>
+            <div class="a11y-group">
+                <button type="button" class="a11y-off">Обычная версия</button>
+            </div>
+        </div>
+    </div>
+    <!-- header:end -->
+
+    <main class="simple-page">
+        <div class="container">
+            <h2 class="section-title">Правила посещения пациентов</h2>
+            <p class="section-subtitle">
+                Правила доступа в медицинскую организацию и посещения пациентов,
+                находящихся на лечении в стационаре
+            </p>
+
+            <div class="simple-card">
+                <h3>На чём основаны правила</h3>
+                <p>
+                    Правила разработаны в соответствии с приказом Министерства здравоохранения
+                    Российской Федерации от 19 августа 2020 года № 869н «Об утверждении общих
+                    требований к организации посещения пациента родственниками и иными членами
+                    семьи или законными представителями пациента в медицинской организации,
+                    в том числе в её структурных подразделениях, предназначенных для проведения
+                    интенсивной терапии и реанимационных мероприятий, при оказании ему медицинской
+                    помощи в стационарных условиях».
+                </p>
+                <p>
+                    Также учитываются Федеральный закон от 21.11.2011 № 323-ФЗ «Об основах охраны
+                    здоровья граждан в Российской Федерации» и действующие санитарно-эпидемиологические
+                    требования.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Кто может посещать пациента</h3>
+                <ul>
+                    <li>родственники, иные члены семьи и законные представители пациента;</li>
+                    <li>иные граждане - при согласии самого пациента.</li>
+                </ul>
+                <p>
+                    Посещение проводится с согласия пациента или его законного представителя
+                    и с учётом состояния пациента, соблюдения противоэпидемического режима
+                    и интересов других пациентов больницы.
+                </p>
+                <p>
+                    Если состояние пациента не позволяет ему дать согласие и законных
+                    представителей у него нет, решение о посещении принимает заведующий
+                    отделением, дежурный врач или ответственный за организацию посещений.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Часы посещения</h3>
+                <div class="data-table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Когда</th>
+                                <th>Время</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Понедельник - пятница</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Суббота, воскресенье и праздничные дни</td>
+                                <td>10:00 - 13:00 и 16:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Отделение реанимации и интенсивной терапии</td>
+                                <td>по согласованию с заведующим отделением или дежурным врачом</td>
+                            </tr>
+                            <tr>
+                                <td>Приёмное отделение</td>
+                                <td>круглосуточно</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Часы посещения уточняйте в регистратуре по телефону
+                    <a href="tel:+78437021332">+7 (843) 702-13-32</a>: в отдельных отделениях
+                    режим может отличаться, а при карантине посещения временно прекращаются.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Требования к посетителям</h3>
+                <p>Перед входом в отделение посетитель обязан:</p>
+                <ul>
+                    <li>снять верхнюю одежду и оставить её в гардеробе;</li>
+                    <li>надеть бахилы или сменную обувь, при необходимости - халат и маску;</li>
+                    <li>вымыть или обработать руки антисептиком;</li>
+                    <li>отключить мобильный телефон или перевести его в беззвучный режим;</li>
+                    <li>сообщить медицинскому работнику, к кому он пришёл.</li>
+                </ul>
+                <p>В отделении посетителю запрещается:</p>
+                <ul>
+                    <li>препятствовать оказанию медицинской помощи;</li>
+                    <li>находиться в палате во время обхода, процедур и манипуляций;</li>
+                    <li>садиться на кровать пациента, трогать медицинское оборудование;</li>
+                    <li>шуметь, нарушать покой других пациентов;</li>
+                    <li>приносить и употреблять алкоголь, курить на территории больницы;</li>
+                    <li>фотографировать и снимать видео без согласия пациентов и персонала.</li>
+                </ul>
+            </div>
+
+            <div class="simple-card">
+                <h3>Кого не допускают к посещению</h3>
+                <ul>
+                    <li>лиц с признаками инфекционных заболеваний - повышенная температура, кашель, насморк, сыпь;</li>
+                    <li>лиц в состоянии алкогольного или наркотического опьянения;</li>
+                    <li>посетителей к пациентам, находящимся в инфекционных боксах и изоляторах;</li>
+                    <li>всех посетителей в период карантина.</li>
+                </ul>
+            </div>
+
+            <div class="simple-card">
+                <h3>Посещение в отделении реанимации и интенсивной терапии</h3>
+                <ul>
+                    <li>посещение разрешает заведующий отделением, дежурный врач или ответственный за организацию посещений;</li>
+                    <li>одновременно у пациента может находиться <strong>не более двух посетителей</strong>;</li>
+                    <li>посещение прекращается при ухудшении состояния пациента, а также на время проведения реанимационных мероприятий и инвазивных процедур;</li>
+                    <li>посетители надевают сменную одежду, маску, шапочку и бахилы, обрабатывают руки антисептиком.</li>
+                </ul>
+            </div>
+
+            <div class="simple-card">
+                <h3>Совместное пребывание с ребёнком</h3>
+                <p>
+                    Одному из родителей, иному члену семьи или законному представителю
+                    предоставляется право на бесплатное совместное нахождение с ребёнком
+                    в больнице в течение всего периода лечения, независимо от возраста ребёнка
+                    (статья 51 Федерального закона № 323-ФЗ). Условия предоставления спального
+                    места и питания уточняйте у заведующего педиатрическим отделением.
+                </p>
+            </div>
+
+            <div class="simple-card">
+                <h3>Передачи для пациентов</h3>
+                <p>
+                    Передачи принимаются в часы посещения. Продукты должны быть в прозрачной
+                    упаковке с указанием даты передачи и фамилии пациента.
+                </p>
+                <p><strong>Нельзя передавать:</strong> скоропортящиеся продукты, домашние консервы,
+                    салаты и готовые блюда с майонезом, кремовые кондитерские изделия, грибы,
+                    алкоголь, а также любые лекарственные препараты без согласования с лечащим врачом.</p>
+                <p>
+                    Перечень продуктов, разрешённых к передаче, и условия их хранения уточняйте
+                    у постовой медицинской сестры отделения.
+                </p>
+            </div>
+
+            <div class="simple-card simple-card--with-gap">
+                <h3>Перечень информационных материалов о правилах доступа</h3>
+                <p class="table-note">
+                    Пункт 11 приказа № 869н обязывает размещать правила посещения, включая
+                    санитарные требования, на официальном сайте и в доступных для посетителей местах.
+                </p>
+                <div class="data-table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Информационный материал</th>
+                                <th>Место размещения</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Правила посещения пациентов (настоящая страница)</td>
+                                <td>Официальный сайт больницы</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/services/rules.html">Правила внутреннего распорядка для пациентов</a></td>
+                                <td>Официальный сайт больницы</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/services/rights.html">Права и обязанности граждан в сфере охраны здоровья</a></td>
+                                <td>Официальный сайт больницы</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/about/schedule.html">График работы подразделений</a></td>
+                                <td>Официальный сайт больницы</td>
+                            </tr>
+                            <tr>
+                                <td>Информационный стенд «Правила посещения пациентов»</td>
+                                <td>Приёмное отделение</td>
+                            </tr>
+                            <tr>
+                                <td>Информационный стенд «Правила посещения пациентов» и перечень разрешённых передач</td>
+                                <td>Клинические отделения: хирургическое, терапевтическое, гинекологическое, педиатрическое, инфекционное</td>
+                            </tr>
+                            <tr>
+                                <td>Памятка о порядке посещения в отделении реанимации и интенсивной терапии</td>
+                                <td>Отделение реанимации и интенсивной терапии</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="simple-card">
+                <h3>Вопросы по посещению</h3>
+                <p>
+                    Регистратура: <a href="tel:+78437021332">+7 (843) 702-13-32</a>.<br>
+                    Приём граждан главным врачом и контакты администрации -
+                    на странице <a href="/about/schedule.html">График работы</a>.
+                </p>
+                <p>
+                    Состав отделений и их расположение приведены на странице
+                    <a href="/about/structure.html">Структура и органы управления</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer:start -->
+    <!-- Не редактировать вручную: собирается из components/footer.html через tools/build-layout.py -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><a href="tel:+78437021332">+7 (843) 702-13-32</a></p>
+                    <p><a href="mailto:Ilsiyar.Sungatullina@tatar.ru">Ilsiyar.Sungatullina@tatar.ru</a></p>
+                    <div class="social-links">
+                        <a href="https://vk.com/public217117229" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="ВКонтакте">
+                            ВК
+                        </a>
+                        <a href="https://max.ru/id1621000421_gos" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="MAX">
+                            MAX
+                        </a>
+                        <a href="https://yandex.ru/maps/org/kaybitskaya_tsentralnaya_rayonnaya_bolnitsa/1880862634/reviews/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Отзывы на Яндекс Картах">
+                            Отзывы
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>О больнице</h3>
+                    <ul>
+                        <li><a href="/index.html#about">О больнице</a></li>
+                        <li><a href="/about/details.html">Сведения об организации</a></li>
+                        <li><a href="/about/structure.html">Структура и органы управления</a></li>
+                        <li><a href="/about/polyclinic.html">Поликлиника</a></li>
+                        <li><a href="/about/schedule.html">График работы</a></li>
+                        <li><a href="/employees/employees.html">Сотрудники</a></li>
+                        <li><a href="/news/news.html">Новости</a></li>
+                        <li><a href="/docs/documents.html">Документы</a></li>
+                        <li><a href="/about/license.html">Лицензия</a></li>
+                        <li><a href="/about/supervision.html">Контролирующие организации</a></li>
+                        <li><a href="/sitemap.html">Карта сайта</a></li>
+                        <li><a href="/search.html">Поиск по сайту</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Специалистам</h3>
+                    <ul>
+                        <li><a href="/vacancies/vacancies.html">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Пациентам</h3>
+                    <ul>
+                        <li><a href="/services/pregnant.html">Для беременных</a></li>
+                        <li><a href="/services/dispensarization.html">Диспансеризация</a></li>
+                        <li><a href="/services/paid.html">Платные услуги</a></li>
+                        <li><a href="/services/useful-links.html">Полезные ссылки</a></li>
+                        <li><a href="/services/state-guarantees.html">Программа госгарантий</a></li>
+                        <li><a href="/services/medicines.html">Лекарственное обеспечение</a></li>
+                        <li><a href="/services/quality-indicators.html">Показатели качества помощи</a></li>
+                        <li><a href="/services/rules.html">Правила внутреннего распорядка</a></li>
+                        <li><a href="/services/visiting.html">Правила посещения пациентов</a></li>
+                        <li><a href="/services/feedback.html">Отзывы и оценка качества</a></li>
+                        <li><a href="/services/fraud-protection.html">Защита от мошенников</a></li>
+                        <li><a href="/services/rights.html">Права и обязанности граждан</a></li>
+                        <li><a href="/services/insurance.html">Страховые организации</a></li>
+                        <li><a href="/services/waiting-times.html">Сроки ожидания помощи</a></li>
+                        <li><a href="/services/treatment-methods.html">Методы оказания помощи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ГАУЗ Кайбицкая ЦРБ</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer:end -->
+</body>
+</html>
