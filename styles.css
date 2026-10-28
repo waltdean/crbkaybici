@@ -1935,3 +1935,22 @@ html[data-a11y="on"] .qr-code {
     background-color: #ffffff !important;
     border-color: var(--a11y-fg) !important;
 }
+
+/* Баннер Платформы обратной связи Госуслуг.
+   Стили самого виджета приходят с pos.gosuslugi.ru и живут внутри
+   #js-show-iframe-wrapper, здесь только отступы и скругление под сайт. */
+.pos-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.pos-section #js-show-iframe-wrapper {
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* В версии для слабовидящих баннер остаётся: это рабочий сервис
+   обращений, а не украшение. Своя контрастная палитра у него есть. */
+html[data-a11y="on"] .pos-section {
+    background-color: var(--a11y-bg) !important;
+}
