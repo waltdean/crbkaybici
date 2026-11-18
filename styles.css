@@ -1954,3 +1954,99 @@ html[data-a11y="on"] .qr-code {
 html[data-a11y="on"] .pos-section {
     background-color: var(--a11y-bg) !important;
 }
+
+/* Политика обработки персональных данных */
+.policy-edition {
+    margin: -12px 0 28px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.policy-table th {
+    width: 34%;
+}
+
+@media (max-width: 640px) {
+    .policy-table th,
+    .policy-table td {
+        display: block;
+        width: auto;
+    }
+
+    .policy-table th {
+        border-bottom: none;
+        padding-bottom: 4px;
+    }
+}
+
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-bottom a:hover {
+    color: var(--white);
+}
+
+/* Уведомление об использовании cookie-файлов (п. 5.3 Политики) */
+.cookie-notice {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2000;
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--white);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cookie-notice p {
+    margin: 0;
+    flex: 1;
+}
+
+.cookie-notice a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.cookie-notice button {
+    flex-shrink: 0;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: var(--white);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cookie-notice button:hover {
+    background: var(--secondary-color);
+}
+
+@media (max-width: 640px) {
+    .cookie-notice {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+html[data-a11y="on"] .cookie-notice,
+html[data-a11y="on"] .cookie-notice button {
+    background-color: var(--a11y-bg) !important;
+    color: var(--a11y-fg) !important;
+    border: 1px solid var(--a11y-fg) !important;
+    box-shadow: none !important;
+}

@@ -6,7 +6,42 @@ document.addEventListener('DOMContentLoaded', function() {
     initDropdowns();
     initAccessibility();
     initHeaderOffset();
+    initCookieNotice();
 });
+
+// Уведомление об использовании cookie-файлов. Согласие пользователь даёт
+// кнопкой «Хорошо» (п. 5.3 Политики обработки персональных данных),
+// отметка хранится в localStorage, чтобы окно не появлялось повторно.
+function initCookieNotice() {
+    const STORAGE_KEY = 'cookie-consent';
+
+    try {
+        if (localStorage.getItem(STORAGE_KEY)) return;
+    } catch (e) {
+        // localStorage недоступен - покажем уведомление, но запомнить ответ не сможем
+    }
+
+    const notice = document.createElement('div');
+    notice.className = 'cookie-notice';
+    notice.setAttribute('role', 'region');
+    notice.setAttribute('aria-label', 'Уведомление об использовании cookie-файлов');
+    notice.innerHTML =
+        '<p>Сайт использует cookie-файлы и сервисы Яндекс Карт и Госуслуг. ' +
+        'Нажимая «Хорошо», вы соглашаетесь с ' +
+        '<a href="/about/privacy-policy.html">Политикой обработки персональных данных</a>.</p>' +
+        '<button type="button">Хорошо</button>';
+
+    notice.querySelector('button').addEventListener('click', function() {
+        try {
+            localStorage.setItem(STORAGE_KEY, new Date().toISOString());
+        } catch (e) {
+            // Приватный режим браузера - уведомление появится снова
+        }
+        notice.remove();
+    });
+
+    document.body.appendChild(notice);
+}
 
 // Шапка зафиксирована сверху, а её высота зависит от ширины экрана и
 // выбранного размера шрифта. Отступ подбираем по фактической высоте,
